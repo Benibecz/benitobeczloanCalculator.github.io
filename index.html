@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div class="errorContainer hidden">Please Check Your Numbers</div>
+      <h1 class="loanTitle">Loan Calculator</h1>
+      <div class="form-group-top">
+        <div><i class="fa-solid fa-dollar-sign"></i></div>
+        <input type="number" class="loan-amount" placeholder="Loan Amount" />
+      </div>
+      <div class="form-group-top">
+        <div><i class="fa-solid fa-percent"></i></div>
+        <input type="number" class="interest-input" placeholder="Interest" />
+      </div>
+      <input
+        type="number"
+        class="years-to-repay-input"
+        placeholder="Years to Repay"
+      />
+      <a href="#" type="submit" class="btn Calculate">Calculate</a>
+
+      <img class="hidden" src="loading.gif" alt="loading" width="40%" />
+
+      <section id="results" class="hidden">
+        <h1>Results</h1>
+        <div class="form-group">
+          <div>Monthly Payment</div>
+          <input class="monthly-payment" type="number" disabled />
+        </div>
+        <div class="form-group">
+          <div>Total Payment</div>
+          <input class="total-payment" type="number" disabled />
+        </div>
+        <div class="form-group">
+          <div>Total Interest</div>
+          <input class="total-interest" type="number" disabled />
+        </div>
+      </section>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
