@@ -16,7 +16,7 @@ body {
 }
 
 form {
-  width: 28%;
+  width: 35rem;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ input:focus {
 .form-group-top {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 13fr;
+  grid-template-columns: 1fr 9fr;
   align-items: center;
   text-align: center;
   background-color: #b4bbc2;
